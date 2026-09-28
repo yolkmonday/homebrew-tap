@@ -4,6 +4,7 @@ Homebrew tap untuk semua aplikasi yolkmonday.
 
 ```bash
 brew tap yolkmonday/tap
+brew trust yolkmonday/tap   # Homebrew baru menolak tap pihak ketiga yang belum di-trust
 ```
 
 | Paket | Jenis | Platform | Install |
