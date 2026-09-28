@@ -9,6 +9,7 @@ brew trust yolkmonday/tap   # Homebrew baru menolak tap pihak ketiga yang belum 
 
 | Paket | Jenis | Platform | Install |
 |---|---|---|---|
+| [agent-deck](https://github.com/yolkmonday/agent-deck) | cask | macOS (arm64, Intel) | `brew install --cask yolkmonday/tap/agent-deck` |
 | [noor](https://github.com/yolkmonday/noor) | cask | macOS (Apple Silicon) | `brew install --cask yolkmonday/tap/noor` |
 | [shello](https://github.com/yolkmonday/shello) | cask | macOS (universal) | `brew install --cask yolkmonday/tap/shello` |
 | [usage-mon](https://github.com/yolkmonday/usage-mon) | formula (CLI) | macOS, Linux | `brew install yolkmonday/tap/usage-mon` |
