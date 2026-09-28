@@ -13,10 +13,6 @@ cask "noor" do
 
   app "Noor.app"
 
-  postflight do
-    system "open", "#{appdir}/Noor.app"
-  end
-
   uninstall quit: "com.noor.app"
 
   zap trash: "~/Library/Preferences/com.noor.app.plist"
