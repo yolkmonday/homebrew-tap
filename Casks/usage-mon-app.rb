@@ -7,8 +7,8 @@ cask "usage-mon-app" do
   desc "Menu bar monitor for Claude Code and Codex usage"
   homepage "https://github.com/yolkmonday/usage-mon"
 
-  depends_on macos: :ventura
   depends_on formula: "yolkmonday/tap/usage-mon"
+  depends_on macos: :ventura
 
   app "UsageMenuBar.app"
 

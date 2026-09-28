@@ -4,23 +4,20 @@ cask "noor" do
 
   url "https://github.com/yolkmonday/noor/releases/download/v#{version}/Noor-#{version}.zip"
   name "Noor"
-  desc "Aplikasi waktu solat untuk macOS"
+  desc "Aplikasi waktu solat"
   homepage "https://github.com/yolkmonday/noor"
 
-  depends_on macos: :sonoma
-  depends_on arch: :arm64
-
   auto_updates true
+  depends_on arch: :arm64
+  depends_on macos: :sonoma
 
   app "Noor.app"
-
-  uninstall quit: "com.noor.app"
 
   postflight do
     system "open", "#{appdir}/Noor.app"
   end
 
-  zap trash: [
-    "~/Library/Preferences/com.noor.app.plist",
-  ]
+  uninstall quit: "com.noor.app"
+
+  zap trash: "~/Library/Preferences/com.noor.app.plist"
 end

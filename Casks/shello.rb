@@ -8,6 +8,7 @@ cask "shello" do
   homepage "https://github.com/yolkmonday/shello"
 
   auto_updates true
+  depends_on :macos
 
   app "Shello.app"
 
